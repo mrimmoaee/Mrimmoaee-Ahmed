@@ -3,6 +3,10 @@
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
+  /* text-align: center; */
+}
+
+.middle a {
   text-align: center;
 }
 
@@ -86,7 +90,7 @@
   }
 
   #hero .hero {
-    padding: 0 48px !important;
+    padding: 0 25px !important;
   }
 }
 

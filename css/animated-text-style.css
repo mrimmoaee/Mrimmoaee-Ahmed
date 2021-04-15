@@ -1,0 +1,41 @@
+.intro {
+  display: flex;
+  color: crimson;
+}
+
+.typing {
+  position: relative;
+  padding-top: 15px;
+  margin-left: 10px;
+  font-size: 50px;
+  color: crimson !important;
+}
+
+/* #hero .hero .intro .typing h1 {
+  color: crimson !important;
+} */
+
+.typing::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  width: 1px;
+  height: 100%;
+  border-right: 2px solid crimson;
+  animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .typing {
+    font-size: 20px;
+  }
+}
